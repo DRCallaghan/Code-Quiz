@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- head and favicon + styling declaration -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DR Callaghan's Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <button id="view-high-scores">High Scores</button>
+            <button id="start-over">Start Over</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduction and directions -->
+        <section id="block0">
+            <h1>Welcome to my JavaScript quiz!</h1>
+            <p>Try to answer the following coding-related questions within the given time limit. Keep in mind that
+                incorrect answers will detract 10 seconds from your allotted time. Once you are ready, click the start
+                button below. The quiz will start immmediately!</p>
+            <button id="start">Start Quiz!</button>
+        </section>
+        <!-- Skeleton html structure for the quiz with unique IDs for dynamic js usage -->
+        <section id="block1">
+            <p id="timer"></p>
+            <h1 id="question"></h1>
+            <ul id="answer-choices">
+                <li>
+                    <button id="choice0" value="a"></button>
+                </li>
+                <li>
+                    <button id="choice1" value="b"></button>
+                </li>
+                <li>
+                    <button id="choice2" value="c"></button>
+                </li>
+                <li>
+                    <button id="choice3" value="d"></button>
+                </li>
+            </ul>
+            <div id="grading">
+                <hr>
+                <h2 id="grade"></h2>
+            </div>
+        </section>
+
+        <!-- Skeleton html structure for after the user finishes the quiz and wants to input their initials to store their score -->
+        <section id="block2">
+            <h1 id="finished"></h1>
+            <h3 id="final-score"></h3>
+            <form id="initials" method="POST">
+                <label for="submitted-name">Your Name or Initials:</label>
+                <input type="text" placeholder="Your Name" name="submitted-name" id="submitted-name" />
+            </form>
+        </section>
+        <!-- Skeleton html structure for viewing all high scores-->
+        <section id="block3">
+            <h1 id="high-scores">High Scores</h1>
+            <ol id="score-list"></ol>
+            <button id="clear-all" class="delete">Clear All</button>
+        </section>
+    </main>
+    <!-- Added link to the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- My JavaScript file -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

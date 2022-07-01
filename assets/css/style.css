@@ -1,0 +1,107 @@
+/* defining global color variables */
+:root {
+    --black: #282828;
+    --grey: #2e2e2e;
+    --bright: #cccccc;
+    --light: #eeeeee;
+    --red: #ff0042;
+    --blue: #3f9af3;
+}
+
+/* universal styling */
+* {
+    padding: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--grey);
+    color: var(--light);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* default button styling */
+button {
+    background-color: var(--bright);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    color: var(--black);
+    border-color: var(--light);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* default button hover styling */
+button:hover {
+    background-color: var(--light);
+    border-color: var(--bright);
+}
+
+/* answer choice button styling */
+ul button {
+    font-size: 20px;
+}
+
+/* default list item styling */
+li {
+    text-align: center;
+    list-style-type: none;
+    margin-left: 35px;
+    vertical-align: text-bottom;
+    font-size: 16px;
+}
+
+/* label and input styling */
+label {
+    margin-right: 0px;
+}
+
+input {
+    margin-left: 0px;
+    border-radius: 5px;
+    border-color: var(--light);
+    font-size: 16px;
+}
+
+input:hover {
+    border-color: var(--blue);
+}
+
+/* grading text coloring */
+.incorrect {
+    color: var(--red);
+}
+
+.correct {
+    color: var(--blue);
+}
+
+/* coloring timer red when 20s or fewer remain */
+.warning {
+    color: var(--red);
+}
+
+/* warning the user about the delete button's functionality */
+.delete {
+    background-color: var(--black);
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.delete:hover {
+    background-color: var(--red);
+    color: var(--light);
+    border-color: var(--bright);
+}
+
+/* separator styling */
+hr {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    border-radius: 15px;
+}
